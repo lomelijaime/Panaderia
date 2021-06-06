@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+
+<AnchorPane id="AnchorPane" prefHeight="352.0" prefWidth="556.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8" fx:controller="Controladores.Calculo_VentaController">
+   <children>
+      <Pane layoutX="226.0" layoutY="-1.0" prefHeight="352.0" prefWidth="330.0">
+         <children>
+            <TextArea editable="false" layoutX="8.0" layoutY="11.0" prefHeight="330.0" prefWidth="315.0" text="                              Panadería El Dorado&#10;  Calle Francisco Huízar 1115a, Joyas del Nilo, Jardinez&#10;     de Los Historiadores , 44860. Guadalajara, Jalisco&#10;             Tel.  33369801754   //www.eldorado.com &#10;--------------------------------------------------------------&#10;     Folio: xxxx-xxxx-xxxx   |     Fecha:  --/--/--  Hora: --:-- &#10;       Nombre de Pieza          Cantidad         Subtotal&#10;               --     --                         --                    --&#10;               --     --                         --                    --&#10;               --     --                         --                    --&#10;               --     --                         --                    --&#10;               --     --                         --                    --&#10;&#10;------| Total : |         --         |-------------------------------&#10;          Pago :        $-----&#10;          Cambio :    $----- &#10;&#10;  Operador :     Nombre_Operador             &#10;&#10;&#10;" />
+         </children>
+      </Pane>
+      <Label layoutX="21.0" layoutY="94.0" prefHeight="17.0" prefWidth="83.0" text="Totál a Pagar :" />
+      <Label fx:id="txtTotal" layoutX="136.0" layoutY="94.0" text="Valor_Total" />
+      <Label layoutX="16.0" layoutY="124.0" text="Pago del Cliente :" />
+      <TextField fx:id="txtPago" layoutX="131.0" layoutY="120.0" prefHeight="25.0" prefWidth="71.0" />
+      <Label layoutX="32.0" layoutY="167.0" prefHeight="17.0" prefWidth="60.0" text="Cambio :" />
+      <Label fx:id="txtCambio" layoutX="129.0" layoutY="167.0" text="Valor_Cambio" />
+      <Button fx:id="btnCancelar" layoutX="56.0" layoutY="270.0" mnemonicParsing="false" onAction="#salir" prefHeight="25.0" prefWidth="138.0" text="Cancelar" />
+      <Button fx:id="btnTicket" layoutX="56.0" layoutY="238.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="138.0" text="Generar Ticket" />
+      <Label layoutX="97.0" layoutY="34.0" text="Factura" />
+   </children>
+</AnchorPane>
