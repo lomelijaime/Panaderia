@@ -47,7 +47,9 @@ public class Cmenu implements Initializable {
     private TableColumn colPrecio;
     @FXML
     private Button btnAgregar;
-    
+    @FXML
+    private Label lblOperador;
+
     private ObservableList<Productos> productos;
 
     @Override
@@ -128,5 +130,15 @@ public class Cmenu implements Initializable {
         Stage stage = (Stage) this.btnSalir.getScene().getWindow();
         stage.close();
     }
-    
+
+    public void setOperador(String usuario){
+        if (usuario.equals("administrador")) {
+            txtNombre_Operador.setText(usuario);
+            txtNombre_Operador.setVisible(true);
+            lblOperador.setVisible(true);
+        }else {
+            txtNombre_Operador.setVisible(false);
+            lblOperador.setVisible(false);
+        }
+    }
 }

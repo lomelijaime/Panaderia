@@ -97,7 +97,8 @@ public class Clogin implements Initializable
         
         stage.setScene(scene);
         stage.show();
-        
+        controlador.setOperador(txtUsername.getText());
+
         //Cerrar Ventana
         Stage myStage = (Stage) this.btnLogin.getScene().getWindow();
         myStage.close();
