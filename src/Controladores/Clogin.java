@@ -61,7 +61,7 @@ public class Clogin implements Initializable
             try 
             {
                 Class.forName("com.mysql.jdbc.Driver");
-                conn = DriverManager.getConnection("jdbc:mysql://localhost:3306/prueba_login", "root", "");
+                conn = DriverManager.getConnection("jdbc:mysql://localhost:3306/panaderia", "root", "");
                 pst = conn.prepareStatement("SELECT * FROM usuarios WHERE usuario=? AND contraseña=?");
                 
                 pst.setString(1, user);
@@ -97,7 +97,8 @@ public class Clogin implements Initializable
         
         stage.setScene(scene);
         stage.show();
-        
+        controlador.setOperador(txtUsername.getText());
+
         //Cerrar Ventana
         Stage myStage = (Stage) this.btnLogin.getScene().getWindow();
         myStage.close();
